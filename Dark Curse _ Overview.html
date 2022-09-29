@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://darkcurse.aioxperts.com/overview -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    :root { font-size: 14px; }
+  </style>
+
+<link href="./Dark Curse _ Overview_files/bootstrap.min.css" rel="stylesheet" >
+
+<link rel="stylesheet" href="./Dark Curse _ Overview_files/bootstrap-toaster.min.css">
+<title>Dark Curse | Overview</title>
+
+<script src="./Dark Curse _ Overview_files/jquery-3.6.1.min.js.download" type="text/javascript"></script>
+<link href="./Dark Curse _ Overview_files/jquery.dataTables.min.css" rel="stylesheet">
+<script src="./Dark Curse _ Overview_files/jquery.dataTables.min.js.download" type="text/javascript"></script>
+<script src="./Dark Curse _ Overview_files/dataTables.bootstrap5.min.js.download" type="text/javascript"></script>
+
+<style>
+    .nav ul {list-style-type:none; margin:0; padding:0;} 
+    .nav li { float: left; margin: 0 5px; } 
+    .nav a {
+      display:block;
+      text-decoration:none;
+    }
+    .nav a:active, .nav a:focus, .nav a:hover {
+      
+    }
+    .nav li.current {
+      
+    }
+    .nav li.current ul {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .nav ul {
+      position:absolute;
+      left:-999em;
+      list-style:none;
+      padding:.9em 0 0;
+    }
+    .nav ul li {
+      width:auto;
+      margin:0 15px 0 0;
+    }
+    .nav ul a {
+      height:auto;
+      padding:0 8px;
+    }
+    .nav li:active ul, .nav li:hover ul { 
+      left: 50%;
+      transform: translate(-50%, 0);
+      background:#fff;
+    }
+  </style>
+</head>
+<body>
+<div class="container d-flex justify-content-center align-items-center">
+<h1 class="my-4 pb-0">Dark Curse</h1>
+</div>
+<ul class="nav justify-content-center border-top border-bottom mb-5">
+<li class="current nav-item">
+<a href="http://darkcurse.aioxperts.com/overview#" class="nav-link">Home</a>
+<ul>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/overview">Overview</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/levels">Levels</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/my-profile" disabled="">Profile</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/settings" disabled="">Settings</a></li>
+</ul>
+</li>
+<li class=" nav-item">
+<a href="http://darkcurse.aioxperts.com/overview#" class="nav-link">Battle</a>
+<ul>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/attack">Attack</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/training">Training</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/battle-upgrades" disabled="">Upgrades</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/war-history" disabled="">War History</a></li>
+</ul>
+</li>
+<li class=" nav-item">
+<a href="http://darkcurse.aioxperts.com/overview#" class="nav-link">Structures</a>
+<ul>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/bank/deposit">Bank</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/armory">Armory</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/structure-upgrades" disabled="">Upgrades</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/housing" disabled="">Housing</a></li>
+<li><a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/repair" disabled="">Repair</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" aria-current="page" href="http://darkcurse.aioxperts.com/signout">Signout</a>
+<ul>
+</ul>
+</li>
+</ul> <main>
+<section>
+<div class="container">
+<div class="content">
+<div class="row">
+<div class="col-lg-2">
+<div class="d-none d-lg-block">
+<div class="card">
+<div class="card-body">
+<h6 class="text-center">Advisor</h6>
+<p class="small">This is a hint, it will rotate out.</p>
+<h6 class="text-center">Stats</h6>
+ <ul class="list-unstyled">
+<li>Gold: <span id="gold">576,000</span></li>
+<li>Citizens: <span id="citizens">57</span></li>
+<li>Level: <span id="level">1</span></li>
+<li>Experience: <span id="experience">0 (next level in <span id="xpToNextLevel">6,000</span>)</span></li>
+<li>Turns Available: <span id="attackTurns">720</span></li>
+<li>Time Until Next Turn: <span id="nextTurnTimestamp">26:26</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="d-lg-none">
+<div class="card">
+<a class="d-lg-none" data-bs-toggle="collapse" aria-expanded="false" aria-controls="advisor" href="http://darkcurse.aioxperts.com/overview#advisor" role="button" style="text-align: center;"><div class="card-header">
+Advisor<i class="icon-arrow-down filter-caret"></i>
+</div></a>
+<div id="advisor" class="collapse">
+<div class="card-body">
+<p class="small">This is a hint, it will rotate out.</p>
+<h6 class="text-center">Stats</h6>
+<ul class="list-unstyled">
+<li>Gold: <span id="gold">576,000</span></li>
+<li>Citizens: <span id="citizens">57</span></li>
+<li>Level: <span id="level">1</span></li>
+<li>Experience: <span id="experience">0 (next level in <span id="xpToNextLevel">6,000</span>)</span></li>
+<li>Turns Available: <span id="attackTurns">720</span></li>
+<li>Time Until Next Turn: <span id="nextTurnTimestamp">27:8</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div> </div>
+<div class="col-lg-10">
+<h1>Overview</h1>
+<p class="text-center">
+<strong>DesignerTest</strong> is an <strong>HUMAN FIGHTER</strong> <br>
+Share this link to gain up to 200 citizens per day: 97e18e7055703a35f14d77e4e6402c0a
+</p>
+<table class="table">
+<thead>
+<tr>
+<td colspan="4">Statistics</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Population</td>
+<td>57</td>
+<td>Fort Health</td>
+<td>50/100(50%)</td>
+</tr>
+<tr>
+<td>Army Size</td>
+<td>0</td>
+<td>Gold</td>
+<td>576,000</td>
+</tr>
+<tr>
+<td>Level</td>
+<td>1</td>
+<td>Gold Per Turn</td>
+<td>2,000</td>
+</tr>
+<tr>
+<td>XP to Next Level</td>
+<td>6,000</td>
+<td>Gold in Bank</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr>
+<td colspan="4">War Statistics</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Offense</td>
+<td>0</td>
+<td>Attacks Won</td>
+<td>0/0(0%)</td>
+</tr>
+<tr>
+<td>Defense</td>
+<td>0</td>
+<td>Defends Won</td>
+<td>0/0(0%)</td>
+</tr>
+<tr>
+<td>Spy Offense</td>
+<td>0</td>
+<td>Spy Victories</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Spy Defense</td>
+<td>0</td>
+<td>Sentry Victories</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main><div style="position: static !important;"></div>
+<script type="text/javascript">
+    //Credit: https://codepen.io/luci/pen/EEavVR
+    //Author: Unknown
+    startTimer();
+
+    function startTimer() {
+      var presentTime = document.getElementById('nextTurnTimestamp').innerHTML;
+      var timeArray = presentTime.split(/[:]+/);
+      var m = timeArray[0];
+      var s = checkSecond((timeArray[1] - 1));
+      if(s==59){m=m-1}
+      if((m + '').length == 1){
+        m = '0' + m;
+      }
+      if(m < 0){
+        m = '29';
+      }
+      document.getElementById('nextTurnTimestamp').innerHTML = m + ":" + s;
+      setTimeout(startTimer, 1000);
+    }
+
+    function checkSecond(sec) {
+      if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+      if (sec < 0) {sec = "59"};
+      return sec;
+    }
+    // END
+  </script>
+<script src="./Dark Curse _ Overview_files/bootstrap.bundle.min.js.download"></script>
+<script src="./Dark Curse _ Overview_files/bootstrap-toaster.min.js.download" type="text/javascript"></script>
+
+<div id="toastContainer" class="position-fixed top-0 right-0" aria-live="polite"></div></body></html>
